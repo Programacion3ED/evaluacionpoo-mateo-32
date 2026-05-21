@@ -1,5 +1,3 @@
-package ec.edu.poo;
-
 public class Firewall extends ActivoDigital {
 
     private int reglasActivas;
