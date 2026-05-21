@@ -1,3 +1,4 @@
+package ec.edu.poo;
 public class Firewall extends ActivoDigital {
 
     private int reglasActivas;
@@ -9,6 +10,7 @@ public class Firewall extends ActivoDigital {
         super(codigo, nombre, nivelRiesgo, parcheAplicado);
         this.reglasActivas = reglasActivas;
     }
+
 
     public int getReglasActivas() {
         return reglasActivas;

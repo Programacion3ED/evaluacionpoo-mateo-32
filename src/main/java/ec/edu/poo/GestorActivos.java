@@ -1,3 +1,4 @@
+package ec.edu.poo;
 public class GestorActivos {
 
     private ActivoDigital[] activos;
@@ -12,8 +13,8 @@ public class GestorActivos {
 
     public boolean registrarActivo(ActivoDigital activo) {
 
-        // Verificar límite
-        if (contador >= 10) {
+
+        if (contador >= activos.length) {
             return false;
         }
 
@@ -34,7 +35,6 @@ public class GestorActivos {
     public ActivoDigital buscarPorCodigo(String codigo) {
 
         for (int i = 0; i < contador; i++) {
-
             if (activos[i].getCodigo().equals(codigo)) {
                 return activos[i];
             }
@@ -49,7 +49,6 @@ public class GestorActivos {
         int cantidad = 0;
 
         for (int i = 0; i < contador; i++) {
-
             if (activos[i].getNivelRiesgo() >= 8) {
                 cantidad++;
             }
@@ -99,7 +98,6 @@ public class GestorActivos {
 
 
     public void reiniciar() {
-
         activos = new ActivoDigital[10];
         contador = 0;
     }

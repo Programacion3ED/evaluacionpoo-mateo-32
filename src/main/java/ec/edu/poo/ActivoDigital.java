@@ -1,3 +1,4 @@
+package ec.edu.poo;
 public class ActivoDigital {
 
     private String codigo;
@@ -5,7 +6,7 @@ public class ActivoDigital {
     private int nivelRiesgo;
     private boolean parcheAplicado;
 
-    // Constructor
+
     public ActivoDigital(String codigo, String nombre, int nivelRiesgo, boolean parcheAplicado) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -13,7 +14,7 @@ public class ActivoDigital {
         this.parcheAplicado = parcheAplicado;
     }
 
-    // Getters y Setters
+
     public String getCodigo() {
         return codigo;
     }

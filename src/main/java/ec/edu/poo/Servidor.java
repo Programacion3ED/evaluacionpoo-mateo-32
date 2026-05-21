@@ -1,3 +1,4 @@
+package ec.edu.poo;
 public class Servidor extends ActivoDigital {
 
     private String sistemaOperativo;
