@@ -2,6 +2,7 @@ public class Firewall extends ActivoDigital {
 
     private int reglasActivas;
 
+
     public Firewall(String codigo, String nombre, int nivelRiesgo,
                     boolean parcheAplicado, int reglasActivas) {
 

@@ -1,7 +1,7 @@
-
 public class Servidor extends ActivoDigital {
 
     private String sistemaOperativo;
+
 
     public Servidor(String codigo, String nombre, int nivelRiesgo,
                     boolean parcheAplicado, String sistemaOperativo) {
@@ -9,6 +9,7 @@ public class Servidor extends ActivoDigital {
         super(codigo, nombre, nivelRiesgo, parcheAplicado);
         this.sistemaOperativo = sistemaOperativo;
     }
+
 
     public String getSistemaOperativo() {
         return sistemaOperativo;

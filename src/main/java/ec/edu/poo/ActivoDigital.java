@@ -5,6 +5,7 @@ public class ActivoDigital {
     private int nivelRiesgo;
     private boolean parcheAplicado;
 
+    // Constructor
     public ActivoDigital(String codigo, String nombre, int nivelRiesgo, boolean parcheAplicado) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -12,34 +13,33 @@ public class ActivoDigital {
         this.parcheAplicado = parcheAplicado;
     }
 
-
+    // Getters y Setters
     public String getCodigo() {
         return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getNivelRiesgo() {
-        return nivelRiesgo;
-    }
-
-    public boolean isParcheAplicado() {
-        return parcheAplicado;
-    }
-
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public int getNivelRiesgo() {
+        return nivelRiesgo;
+    }
+
     public void setNivelRiesgo(int nivelRiesgo) {
         this.nivelRiesgo = nivelRiesgo;
+    }
+
+    public boolean isParcheAplicado() {
+        return parcheAplicado;
     }
 
     public void setParcheAplicado(boolean parcheAplicado) {
